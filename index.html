@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section (Menu) -->
+  <header class="header">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <div class="banner-content">
+        <h1>Bienvenue sur notre site</h1>
+        <p>Découvrez nos services et bien plus encore.</p>
+        <a href="#services" class="btn">Voir nos services</a>
+    </div>
+  </div>
+
+  <!-- Conteneur principal : Image + Texte avec Formulaire -->
+  <div class="content-container">
+    <!-- Section avec Image et Texte -->
+    <div class="image-text">
+      <div class="image-section">
+        <img src="https://via.placeholder.com/600x400" alt="Image de démonstration" class="responsive-img">
+      </div>
+      <div class="text-section">
+        <h2>Titre de l'image</h2>
+        <p>Voici une description de l'image. Vous pouvez ajouter du texte explicatif ici.</p>
+      </div>
+    </div>
+
+    <!-- Formulaire de Contact -->
+    <div class="form-section">
+      <h2>Contactez-nous</h2>
+      <form action="submit_form.php" method="POST" class="contact-form">
+          <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>&copy; 2024 Votre entreprise. Tous droits réservés.</p>
+  </div>
+
+</body>
+</html>
